@@ -1,0 +1,730 @@
+body {font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.849);
+  margin-top: 20px;}
+
+#navbar {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255); 
+  
+  
+}
+
+#navbar a {
+  float: left;
+  padding: 2px;
+  color: rgba(0, 0, 0, 0.582);
+  text-decoration: none;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  margin-left: 0.3cm;
+}
+
+.dropdown {
+  float:left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 13px;  
+  border: none;
+  outline: none;
+  color:rgba(0, 0, 0, 0.747);
+  padding: 12px 15px;
+  background-color: inherit;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  font-weight: 600;
+}
+
+#navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+  color: rgba(40, 136, 245, 0.918);
+}
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+
+.fa {
+  padding: 1px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.404);
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+.button {
+  background-color: #1248fa; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+  
+    
+      * {box-sizing: border-box}
+      body {font-family: Verdana, sans-serif; margin:0}
+      .mySlides {display: none}
+      img {vertical-align: middle;}
+      
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+    
+      }
+      * {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active, .dot:hover {
+        background-color: #ffffff;
+      }
+      
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+      }
+      * {
+        box-sizing: border-box;
+      }
+      
+      /* Create two equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 300px; /* Should be removed. Only for demonstration */
+      }
+      p.cold-para{
+       
+        font-family: open sans, sans-serif;
+        font-size: 17px;
+        
+        letter-spacing: 0.5px;
+        margin-top: 0px;
+        
+        color: #58595b;
+        text-align: justify;}
+     /* .cold-chain div h2{
+        font-size: 35px;
+        padding: 65px;
+       margin-bottom: 0%;
+      } */
+
+      .box-1 {
+        background: url(https://www.tessol.in/wp-content/uploads/2019/05/box-1-bg.png )no-repeat #eee9e9;
+        background-position: center;
+        background-size: contain;
+        border-radius: 4px;
+        padding: 20px 20px;
+        -webkit-font-smoothing: antialiased;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+
+      .box-1 .btn-blue {
+        width: auto;
+        height: auto;
+        color: #fff;
+        background-color: #0072b5;
+        text-align: center;
+        float: left;
+        margin: 40px 0px 20px;
+        padding: 8px 15px;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0.5px;
+        border-radius: 4px;
+        text-decoration: none;
+      }
+      .box-1:hover {
+        background: url(https://www.tessol.in/wp-content/uploads/2019/05/box-1-bg.png)no-repeat #0072b5;
+        background-position: center;
+        background-size: contain;
+    }
+    
+.box-1:hover .btn-blue {
+  background-color: #fff;
+  color: #0072b5;
+}
+
+.box-1:hover .card-title {
+  color: #fff;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+.box-2 {
+  background: url(https://www.tessol.in/wp-content/uploads/2019/05/box-2-bg.png )no-repeat #eee9e9;
+  background-position: center;
+  background-size: contain;
+  border-radius: 4px;
+  padding: 20px 20px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.box-2 .btn-blue {
+  width: auto;
+  height: auto;
+  color: #fff;
+  background-color: #0072b5;
+  text-align: center;
+  float: left;
+  margin: 40px 0px 20px;
+  padding: 8px 15px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.box-2:hover {
+  background: url(https://www.tessol.in/wp-content/uploads/2019/05/box-2-bg.png)no-repeat #0072b5;
+  background-position: center;
+  background-size: contain;
+}
+
+.box-2:hover .btn-blue {
+background-color: #fff;
+color: #0072b5;
+}
+
+.box-2:hover .card-title {
+color: #fff;
+}
+.box-3 {
+  background: url(https://www.tessol.in/wp-content/uploads/2019/05/box-3-bg.png )no-repeat #eee9e9;
+  background-position: center;
+  background-size: contain;
+  border-radius: 4px;
+  padding: 20px 20px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.box-3 .btn-blue {
+  width: auto;
+  height: auto;
+  color: #fff;
+  background-color: #0072b5;
+  text-align: center;
+  float: left;
+  margin: 40px 0px 20px;
+  padding: 8px 15px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.box-3:hover {
+  background: url(https://www.tessol.in/wp-content/uploads/2019/05/box-3-bg.png)no-repeat #0072b5;
+  background-position: center;
+  background-size: contain;
+}
+
+.box-3:hover .btn-blue {
+background-color: #fff;
+color: #0072b5;
+}
+
+.box-3:hover .card-title {
+color: #fff;
+}
+      
+
+
+
+
+
+
+
+.box-4 {
+  background: url(https://www.tessol.in/wp-content/uploads/2019/05/box-4-bg.png )no-repeat #eee9e9;
+  background-position: center;
+  background-size: contain;
+  border-radius: 4px;
+  padding: 20px 20px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.box-4 .btn-blue {
+  width: auto;
+  height: auto;
+  color: #fff;
+  background-color: #0072b5;
+  text-align: center;
+  float: left;
+  margin: 40px 0px 20px;
+  padding: 8px 15px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.box-4:hover {
+  background: url(https://www.tessol.in/wp-content/uploads/2019/05/box-4-bg.png)no-repeat #0072b5;
+  background-position: center;
+  background-size: contain;
+}
+
+.box-4:hover .btn-blue {
+background-color: #fff;
+color: #0072b5;
+}
+
+.box-4 :hover .card-title {
+color: #fff;
+}
+.banner{
+  position: relative;
+}
+.banner .first-container{
+  position: absolute;
+    top: 7%;
+    left: 6%;
+    color: white;
+}
+.banner .second-container {
+  position: absolute;
+    top: 35%;
+    left: 6%;
+    color: white;
+}
+.why-image-1 {
+  background: url(https://www.tessol.in/wp-content/uploads/2019/05/Homes.png) no-repeat;
+  background-position: center top;
+  width: 180px;
+  height: 178px;
+  border-radius: 4px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.text-why-image{
+  margin-left: 11px;
+  text-align: center;
+  margin-top: 10px;
+}
+.why-image-1:hover {
+  background: url(https://www.tessol.in/wp-content/uploads/2019/05/homes-hover.png)#1fb25a no-repeat;
+  background-position: center top;
+}
+.why-image-1 {
+  background: url(https://www.tessol.in/wp-content/uploads/2019/05/Homes.png) no-repeat;
+  background-position: center top;
+  width: 180px;
+  height: 178px;
+  border-radius: 4px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.why-image-1:hover {
+  background: url(https://www.tessol.in/wp-content/uploads/2019/05/homes-hover.png)#1fb25a no-repeat;
+  background-position: center top;
+}
+.why-image-2 {
+  background: url(https://www.tessol.in/wp-content/uploads/2019/05/temperature-guarantee.png) no-repeat;
+  background-position: center top;
+  width: 180px;
+  height: 178px;
+  border-radius: 4px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.why-image-2:hover {
+  background: url(https://www.tessol.in/wp-content/uploads/2019/05/temperature-guarantee-hover.png)#1fb25a no-repeat;
+  background-position: center top;
+}
+.why-image-3 {
+  background: url(https://www.tessol.in/wp-content/uploads/2019/05/cost-savings.png) no-repeat;
+  background-position: center top;
+  width: 180px;
+  height: 178px;
+  border-radius: 4px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.why-image-3:hover {
+  background: url(https://www.tessol.in/wp-content/uploads/2019/05/cost-savings-hover.png)#1fb25a no-repeat;
+  background-position: center top;
+}
+.why-image-4 {
+  background: url(https://www.tessol.in/wp-content/uploads/2019/05/real-time.png) no-repeat;
+  background-position: center top;
+  width: 180px;
+  height: 178px;
+  border-radius: 4px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.why-image-4:hover {
+  background: url(https://www.tessol.in/wp-content/uploads/2019/05/real-time-hover.png)#1fb25a no-repeat;
+  background-position: center top;
+}
+.it-box{
+  border-style: solid;
+    border-width: 5px;
+    border-radius: 4px;
+    border-color: rgb(235, 233, 221);
+    padding: 40px 30px;
+    min-height: 280px;
+    transition: all 700ms ease 0s;
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none
+}
+.it-img1{
+  background: url(https://www.tessol.in/wp-content/uploads/2019/05/plug-n-chill.png) no-repeat;
+  background-position: left top;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.description{
+  
+  font-family: open sans, sans-serif;
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #7e7f83;
+  text-align: left;
+  top: 100px;
+  position: relative;
+  display: flex;
+}
+.it-box:hover{
+  background-color: rgb(0, 114, 181);
+  border-color: rgb(0, 114, 181)
+}
+.it-box:hover .description {
+  color: white
+}
+.it-img2{
+  background: url(https://www.tessol.in/wp-content/uploads/2019/05/swap.png) no-repeat;
+  background-position: left top;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.it-img3{
+  background: url(https://www.tessol.in/wp-content/uploads/2019/05/tamsys.png) no-repeat;
+  background-position: left top;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+
+.logo .col-md-3{
+  display: inline-block;
+  margin-left:-4px;
+}
+.logo .col-md-3 img{
+  width:100%;
+  height:auto;
+}
+body .logo .carousel-indicators li{
+  background-color:red;
+}
+body .logo .carousel-control-prev-icon,
+body .logo .carousel-control-next-icon{
+  background-color:red;
+}
+body .no-padding{
+  padding-left: 0;
+  padding-right: 0;
+}
+.ban{
+  position: relative;
+}
+.ban .first-container{
+  position: absolute;
+    top: 30%;
+    left: 6%;
+    color: rgb(255, 255, 255);
+}
+.banner .second-container {
+  position: absolute;
+    top: 35%;
+    left: 6%;
+    color: white;
+}
+.h1{
+  font-size: 20px;
+}
+.icon{
+  width: 10px;
+}
+.image {
+  margin-right: 15px; 
+}
+.bann{
+  position: relative;
+}
+.bann .first-container{
+  position: absolute;
+    top: 20%;
+    left: 6%;
+    color: rgb(255, 255, 255);
+}
+.ubtn-hover{
+  background: rgb(88, 89, 91);width: auto;
+  height: auto;
+  color: #fff;
+  background-color: #0072b5;
+  text-align: center;
+  float: left;
+  margin: 40px 0px 20px;
+  padding: 8px 15px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  text-decoration: none;
+
+}
+
+footer .copyright{
+  line-height: 30px;
+    font-size: 12px;
+}
+footer {
+  color: #7e7f82;
+    background-color: #ffffff;
+    padding: 15px 0;
+    border-top: 1px solid #ddd;
+}
+a.ubtn-link {
+  margin-right: 32px;
+  float: right;
+  padding: 15px 30px;
+  display: inline-block;
+  margin: 0;
+  color: inherit;
+  text-decoration: none;
+  max-width: 100%;
+  font-weight: bold;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: rgb(0, 114, 181);
+  border-style: solid;
+  background: rgb(0, 114, 181);
+  color: rgb(255, 255, 255);
+}
+.contact-us {
+  
+  float: right;
+}
+.text-trans{
+  animation: left_to_right 3s ease;
+
+}
+
+@keyframes left_to_right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
